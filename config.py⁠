@@ -1,0 +1,19 @@
+import os
+from dotenv import load_dotenv
+
+# Carrega variáveis do arquivo .env, se existir
+load_dotenv()
+
+class Config:
+    """Configurações globais da aplicação."""
+    MAX_FILE_SIZE_MB = 5
+    MAX_FILE_SIZE_BYTES = MAX_FILE_SIZE_MB * 1024 * 1024
+    ALLOWED_TYPES = ["jpg", "jpeg", "png"]
+    
+    # Cores de fundo profissionais (RGB)
+    BACKGROUND_STYLES = {
+        "Estúdio Cinza Escuro (Slate)": (47, 79, 79),
+        "Azul Corporativo (Navy)": (0, 0, 128),
+        "Cinza Claro (Clean)": (220, 220, 220),
+        "Branco Puro (Documento)": (255, 255, 255)
+    }
