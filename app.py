@@ -2,8 +2,9 @@ import streamlit as st
 from PIL import Image
 import io
 
-from src.config import Config
-from src.image_processor import CorporatePortraitProcessor, ImageProcessingError
+from config import Config
+from image_processor import CorporatePortraitProcessor, ImageProcessingError
+
 
 # --- Configuração da Página ---
 st.set_page_config(
